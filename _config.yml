@@ -1,0 +1,12 @@
+title: "Hangbeum Cho Blog"
+description: "Statistics, data science, and practical analysis notes"
+theme: minima
+
+url: "https://hangbeumcho.github.io"
+baseurl: "/chb.github.io"
+
+author:
+  name: "Hangbeum Cho"
+
+markdown: kramdown
+
