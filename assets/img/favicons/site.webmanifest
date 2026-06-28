@@ -1,6 +1,6 @@
 {
   "name": "CHB Blog",
-  "short_name": "CHB Blog",
+  "short_name": "CHB",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#161b22",
-  "background_color": "#161b22",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone"
 }
