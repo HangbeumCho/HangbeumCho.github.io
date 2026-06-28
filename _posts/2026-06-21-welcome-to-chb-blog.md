@@ -4,6 +4,7 @@ date: 2026-06-21 00:00:00 +0900
 categories: [Blog, Notice]
 tags: [github-pages, jekyll, chirpy]
 math: true
+published: false
 ---
 
 통계와 데이터 분석 과정에서 배운 내용과 실무에서 유용했던 방법을 정리하기 위해

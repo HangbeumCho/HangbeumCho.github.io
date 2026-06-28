@@ -12,12 +12,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings
 # ↓ --------------------------
 
-title: CHB Blog
+title: 조항범의 블로그
 
-tagline: Statistics, Data Science, and Practical Analysis Notes
+tagline: nanos gigantum humeris insidentes
 
 description: >-
-  Statistics, Data Science, and Practical Analysis Notes
+  nanos gigantum humeris insidentes
 
 url: "https://hangbeumcho.github.io"
 
