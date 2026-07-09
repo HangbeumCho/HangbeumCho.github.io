@@ -3,13 +3,12 @@ title: "Welch's t-test: 등분산 가정이 깨졌을 때의 평균 비교"
 date: 2026-06-22 10:00:00 +0900
 categories:
   - Statistics
-  - Hypothesis Testing
+  - Applied Statistics
 tags:
   - Statistics
   - Hypothesis Test
   - t-test
   - Welch Test
-  - Applied Statistics
 math: true
 toc: true
 ---

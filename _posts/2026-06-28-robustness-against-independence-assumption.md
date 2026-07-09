@@ -3,10 +3,10 @@ title: "Robustness against independence assumption : 독립성은 왜 표준오�
 date: 2026-06-28 23:00:00 +0900
 categories:
   - Statistics
-  - Hypothesis Testing
+  - Applied Statistics
 tags:
   - Statistics
-  - Applied Statistics
+  - Hypothesis Testing
 math: true
 toc: true
 ---

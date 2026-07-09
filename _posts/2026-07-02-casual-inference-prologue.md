@@ -6,7 +6,7 @@ categories:
   - Causal Inference
 tags:
   - Confounding
-  - 
+  - Retrospective Research
   - Intervention
 math: true
 toc: true
