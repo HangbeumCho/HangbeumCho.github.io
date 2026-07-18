@@ -49,3 +49,49 @@ h6,
 #sidebar .site-subtitle {
   font-family: var(--chb-heading-font);
 }
+
+/* =========================================================
+   CHB Statistical Research Notes
+   Academic color palette
+   ========================================================= */
+
+:root {
+  --chb-accent: #1f3a5f;
+  --chb-accent-hover: #2c527f;
+  --chb-paper: #faf9f6;
+  --chb-text: #2b2f36;
+  --chb-muted: #6b7280;
+  --chb-border: #d9dee7;
+}
+
+/* Light mode */
+html[data-mode="light"] {
+  --main-bg: var(--chb-paper);
+  --body-bg: var(--chb-paper);
+  --text-color: var(--chb-text);
+  --heading-color: #182235;
+  --link-color: var(--chb-accent);
+  --card-bg: #ffffff;
+  --card-border-color: var(--chb-border);
+}
+
+/* Dark mode */
+html[data-mode="dark"] {
+  --main-bg: #171a1f;
+  --body-bg: #171a1f;
+  --text-color: #d8dde6;
+  --heading-color: #edf1f7;
+  --link-color: #9dbce0;
+  --card-bg: #1e232b;
+  --card-border-color: #353c47;
+}
+
+/* Links */
+.content a {
+  text-decoration-color: rgba(31, 58, 95, 0.35);
+  text-underline-offset: 0.18em;
+}
+
+.content a:hover {
+  color: var(--chb-accent-hover);
+}
