@@ -5,10 +5,14 @@
 
 /* =========================================================
    CHB Statistical Research Notes
-   Custom styles
    ========================================================= */
 
-   :root {
+/* ---------------------------------------------------------
+   1. Design tokens
+   --------------------------------------------------------- */
+
+:root {
+  /* Typography */
   --chb-heading-font:
     Georgia,
     "Noto Serif KR",
@@ -22,16 +26,29 @@
     "Noto Sans KR",
     Arial,
     sans-serif;
+
+  /* Colors */
+  --chb-accent: #1f3a5f;
+  --chb-accent-hover: #2c527f;
+  --chb-paper: #faf9f6;
+  --chb-text: #2b2f36;
+  --chb-muted: #6b7280;
+  --chb-border: #d9dee7;
 }
 
-/* 본문 */
+/* ---------------------------------------------------------
+   2. Typography
+   --------------------------------------------------------- */
+
+body {
+  font-family: var(--chb-body-font);
+}
+
 main,
 .content {
-  font-family: var(--chb-body-font);
   line-height: 1.8;
 }
 
-/* 제목 */
 h1,
 h2,
 h3,
@@ -44,27 +61,15 @@ h6,
   letter-spacing: -0.02em;
 }
 
-/* 사이드바 브랜드 */
 #sidebar .site-title,
 #sidebar .site-subtitle {
   font-family: var(--chb-heading-font);
 }
 
-/* =========================================================
-   CHB Statistical Research Notes
-   Academic color palette
-   ========================================================= */
+/* ---------------------------------------------------------
+   3. Light mode
+   --------------------------------------------------------- */
 
-:root {
-  --chb-accent: #1f3a5f;
-  --chb-accent-hover: #2c527f;
-  --chb-paper: #faf9f6;
-  --chb-text: #2b2f36;
-  --chb-muted: #6b7280;
-  --chb-border: #d9dee7;
-}
-
-/* Light mode */
 html[data-mode="light"] {
   --main-bg: var(--chb-paper);
   --body-bg: var(--chb-paper);
@@ -73,9 +78,16 @@ html[data-mode="light"] {
   --link-color: var(--chb-accent);
   --card-bg: #ffffff;
   --card-border-color: var(--chb-border);
+
+  --chb-current-link: var(--chb-accent);
+  --chb-current-link-hover: var(--chb-accent-hover);
+  --chb-link-underline: rgba(31, 58, 95, 0.35);
 }
 
-/* Dark mode */
+/* ---------------------------------------------------------
+   4. Dark mode
+   --------------------------------------------------------- */
+
 html[data-mode="dark"] {
   --main-bg: #171a1f;
   --body-bg: #171a1f;
@@ -84,14 +96,22 @@ html[data-mode="dark"] {
   --link-color: #9dbce0;
   --card-bg: #1e232b;
   --card-border-color: #353c47;
+
+  --chb-current-link: #9dbce0;
+  --chb-current-link-hover: #bdd3ec;
+  --chb-link-underline: rgba(157, 188, 224, 0.45);
 }
 
-/* Links */
+/* ---------------------------------------------------------
+   5. Links
+   --------------------------------------------------------- */
+
 .content a {
-  text-decoration-color: rgba(31, 58, 95, 0.35);
+  color: var(--chb-current-link);
+  text-decoration-color: var(--chb-link-underline);
   text-underline-offset: 0.18em;
 }
 
 .content a:hover {
-  color: var(--chb-accent-hover);
+  color: var(--chb-current-link-hover);
 }
