@@ -81,22 +81,18 @@ actions:
     static_url: false
 
 comments:
-  provider:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
+  provider: giscus
+
   giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
+    repo: HangbeumCho/HangbeumCho.github.io
+    repo_id: R_kgDOTA1A_A
+    category: General
+    category_id: DIC_kwDOTA1A_M4DBcIL
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: ko
+    reactions_enabled: 1
 
 assets:
   self_host:
