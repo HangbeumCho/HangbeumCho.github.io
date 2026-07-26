@@ -138,7 +138,7 @@ $$
 
 ## 4. Welch's t-test
 
-Welch는 분모를 솔직하게 계산하자고 제안했다.
+어쩔 수 없이, 분모를 솔직하게 계산하자.
 
 평균 차이의 분산을 그대로 추정하면
 
@@ -247,7 +247,7 @@ Welch-Satterthwaite 근사는 사실상 **Moment Matching**이다.
 1. 평균(E)
 2. 분산(Var)
 
-이 서로 같도록 자유도 \(d\)를 선택한다.
+이 서로 같도록 척도상수 $C$와 자유도 $d$를 선택한다.
 
 카이제곱 분포는
 
@@ -267,14 +267,14 @@ $$
 
 가상의 χ² 분포가
 
-동일한 평균과 분산을 가지도록 자유도를 결정한다.
+동일한 평균과 분산을 가지도록 척도상수와 자유도를 결정한다.
 
 그 결과,
 
 유효 자유도(Effective Degrees of Freedom)
 
 $$
-df=
+d=
 \frac{
 \left(
 \frac{s_1^2}{n_1}
@@ -299,6 +299,230 @@ $$
 를 얻는다.
 
 이를 **Welch-Satterthwaite Approximation**이라고 부른다.
+
+<small> 척도상수 C는, 검정통계량을 상쇄하는 과정에서 삭제되어, 식에 나타나지 않는다. </small>
+
+<details markdown="1">
+
+### Welch–Satterthwaite 근사의 구체적인 과정
+
+두 집단의 표본분산을 이용하여 평균 차이의 분산을 추정한 값을
+
+$$
+Q=
+\frac{s_1^2}{n_1}
++
+\frac{s_2^2}{n_2}
+$$
+
+라고 하자. 정규성 가정 아래에서
+
+$$
+\frac{(n_i-1)s_i^2}{\sigma_i^2}
+\sim
+\chi_{n_i-1}^2
+$$
+
+이므로
+
+$$
+Q=
+\frac{\sigma_1^2}{n_1}
+\frac{\chi_{n_1-1}^2}{n_1-1}
++
+\frac{\sigma_2^2}{n_2}
+\frac{\chi_{n_2-1}^2}{n_2-1}
+$$
+
+로 나타낼 수 있다.
+
+Welch–Satterthwaite 근사는 이 복잡한 가중합을 다음과 같은 하나의 카이제곱 확률변수로 근사한다.
+
+$$
+Q
+\approx
+C\frac{\chi_d^2}{d}
+$$
+
+#### 1. 평균을 맞추면 $C$가 결정된다
+
+먼저 $Q$의 평균은
+
+$$
+E(Q)
+=
+
+\frac{\sigma_1^2}{n_1}
++
+\frac{\sigma_2^2}{n_2}
+$$
+
+이다. 한편 근사분포의 평균은
+
+$$
+E\left(
+C\frac{\chi_d^2}{d}
+\right)
+=
+
+C
+$$
+
+이므로, 두 평균을 일치시키면
+
+$$
+C=
+\frac{\sigma_1^2}{n_1}
++
+\frac{\sigma_2^2}{n_2}
+$$
+
+를 얻는다.
+
+즉, $C$는 두 표본평균 차이의 실제 분산이다.
+
+$$
+C=
+\operatorname{Var}(\bar{Y}_1-\bar{Y}_2)
+$$
+
+#### 2. 분산을 맞추면 $d$가 결정된다
+
+$Q$의 분산은
+
+$$
+\operatorname{Var}(Q)
+=
+
+2\left[
+\frac{(\sigma_1^2/n_1)^2}{n_1-1}
++
+\frac{(\sigma_2^2/n_2)^2}{n_2-1}
+\right]
+$$
+
+이다. 근사분포의 분산은
+
+$$
+\operatorname{Var}\left(
+C\frac{\chi_d^2}{d}
+\right)
+=
+
+\frac{2C^2}{d}
+$$
+
+이므로, 두 분산을 일치시키면
+
+$$
+d=
+\frac{
+\left(
+\frac{\sigma_1^2}{n_1}
++
+\frac{\sigma_2^2}{n_2}
+\right)^2
+}{
+\frac{(\sigma_1^2/n_1)^2}{n_1-1}
++
+\frac{(\sigma_2^2/n_2)^2}{n_2-1}
+}
+$$
+
+를 얻는다.
+
+실제로는 모집단 분산 $\sigma_i^2$을 알 수 없으므로 표본분산 $s_i^2$을 대입한다. 이에 따라 Welch 검정의 유효 자유도는
+
+$$
+df=
+\frac{
+\left(
+\frac{s_1^2}{n_1}
++
+\frac{s_2^2}{n_2}
+\right)^2
+}{
+\frac{(s_1^2/n_1)^2}{n_1-1}
++
+\frac{(s_2^2/n_2)^2}{n_2-1}
+}
+$$
+
+로 계산된다.
+
+#### 그렇다면 왜 $C$는 최종 공식에서 사라지는가?
+
+평균 차이에서 귀무가설이 주장하는 값을 뺀 것을
+
+$$
+D=
+(\bar{Y}_1-\bar{Y}_2)
+-
+
+(\mu_1-\mu_2)
+$$
+
+라고 하자. 그러면
+
+$$
+\frac{D}{\sqrt{C}}
+\sim
+N(0,1)
+$$
+
+이다.
+
+Welch 검정통계량은
+
+$$
+T=
+\frac{D}{\sqrt{Q}}
+$$
+
+이며, 이를 다음과 같이 나타낼 수 있다.
+
+$$
+T=
+\frac{D/\sqrt{C}}
+{\sqrt{Q/C}}
+$$
+
+Moment matching에 따르면
+
+$$
+Q
+\approx
+C\frac{\chi_d^2}{d}
+$$
+
+이므로
+
+$$
+\frac{Q}{C}
+\approx
+\frac{\chi_d^2}{d}
+$$
+
+이다.
+
+또한 정규성 가정 아래에서 표본평균과 표본분산은 서로 독립이므로
+
+$$
+T
+\approx
+\frac{N(0,1)}
+{\sqrt{\chi_d^2/d}}
+\sim
+t_d
+$$
+
+를 얻는다.
+
+따라서, 분자와 분모를 동일한 분산 $C$로 표준화하는 과정에서 $C$가 상쇄된 것이다. 그 결과 최종 검정통계량에는 $C$가 나타나지 않고 근사 자유도 $d$만 남는다.
+
+<summary>증명 보기</summary>
+
+</details>
 
 ---
 
