@@ -1,6 +1,6 @@
 ---
-title: "Generalized Linear Model(GLM)이란?"
-date: 2026-07-26 27:00:00 +0900
+title: "[GLM] #01. Generalized Linear Model(GLM)이란?"
+date: 2026-07-26 20:00:00 +0900
 categories:
   - Statistics
   - Applied Statistics
@@ -10,8 +10,9 @@ tags:
   - Generalized Linear Model
   - Linear Regression
 math: true
+toc: true
+published: true
 ---
-
 
 # Generalized Linear Model(GLM)이란?
 
@@ -245,9 +246,3 @@ $$
 라는 선형결합을 유지한다.
 
 일반화되는 것은 **반응변수의 평균과 선형예측자를 연결하는 방식**이다.
-
-다음 글에서는 흔히 떠올릴 수 있는 질문인
-
-> **"반응변수를 적절히 변환해서 선형회귀를 적용하면 되지 않을까?"**
-
-라는 관점에서, **반응변수 변환과 GLM의 차이**를 살펴보도록 하자.
