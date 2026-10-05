@@ -1,6 +1,6 @@
 ---
 title: "[GLM] #03. GLM의 확률분포는 왜 Exponential Family일까?"
-date: 2026-07-26 20:00:00 +0900
+date: 2026-10-05 20:00:00 +0900
 categories:
   - Statistics
   - Applied Statistics
