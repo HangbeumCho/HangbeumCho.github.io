@@ -5,8 +5,7 @@ categories:
   - Statistics
   - Applied Statistics
 tags:
-  - Statistics
-  - 
+  - Degree of Freedom
 math: true
 toc: true
 published: true

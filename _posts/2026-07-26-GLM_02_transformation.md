@@ -8,7 +8,6 @@ categories:
 tags:
   - GLM
   - Generalized Linear Model
-  - Linear Regression
 math: true
 toc: true
 published: true

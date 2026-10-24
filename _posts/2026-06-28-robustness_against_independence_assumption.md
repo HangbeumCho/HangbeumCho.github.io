@@ -5,10 +5,11 @@ categories:
   - Statistics
   - Applied Statistics
 tags:
-  - Statistics
+  - Independence
   - Hypothesis Testing
 math: true
 toc: true
+published: true
 ---
 
 

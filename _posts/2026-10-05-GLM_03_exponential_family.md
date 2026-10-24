@@ -8,7 +8,7 @@ categories:
 tags:
   - GLM
   - Generalized Linear Model
-  - Linear Regression
+  - Expoenetial Family
 math: true
 toc: true
 published: true
