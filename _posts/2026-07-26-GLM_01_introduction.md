@@ -10,7 +10,7 @@ tags:
   - Generalized Linear Model
 math: true
 toc: true
-published: true
+published: false
 ---
 
 # Generalized Linear Model(GLM)이란?

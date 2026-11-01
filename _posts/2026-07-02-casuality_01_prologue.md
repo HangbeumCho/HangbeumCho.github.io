@@ -10,7 +10,7 @@ tags:
   - Intervention
 math: true
 toc: true
-published: true
+published: false
 ---
 # 인과추론이 필요한 이유 - 관측 데이터로 실험을 흉내 내기
 

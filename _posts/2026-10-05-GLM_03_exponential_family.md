@@ -11,7 +11,7 @@ tags:
   - Expoenetial Family
 math: true
 toc: true
-published: true
+published: false
 ---
 
 # GLM의 확률분포는 왜 Exponential Family일까?

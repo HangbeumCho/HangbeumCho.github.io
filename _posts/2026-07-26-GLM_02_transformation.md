@@ -10,7 +10,7 @@ tags:
   - Generalized Linear Model
 math: true
 toc: true
-published: true
+published: false
 ---
 
 # 왜 반응변수를 변환하는 것만으로는 충분하지 않을까? - GLM과 Transformation Model의 차이

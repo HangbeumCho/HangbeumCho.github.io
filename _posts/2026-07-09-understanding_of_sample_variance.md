@@ -8,7 +8,7 @@ tags:
   - Sample Variance
 math: true
 toc: true
-published: true
+published: false
 ---
 
 # 왜 표본분산은 $n$이 아니라 $n-1$로 나눌까?
