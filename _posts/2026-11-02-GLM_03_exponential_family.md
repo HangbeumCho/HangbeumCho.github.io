@@ -1,6 +1,7 @@
 ---
 title: "[GLM] #03. GLM의 확률분포는 왜 Exponential Family일까?"
-date: 2026-10-05 20:00:00 +0900
+date: 2026-11-02 10:44:00 +0900
+last_modified_at: 2026-11-02 99:99:00 +0900
 categories:
   - Statistics
   - Applied Statistics
@@ -26,23 +27,19 @@ published: false
 
 등을 사용할 수 있다.
 
-그런데 여기서 한 가지 의문이 생긴다.
+그런데 여기서 한 가지 의문이 생긴다. 
 
-> **GLM에서는 어떤 확률분포든 사용할 수 있는 것일까?**
+> **GLM에서는 어떤 확률분포든 사용할 수 있을까?**
 
-그렇지는 않다.
+그렇지는 않다. 고전적인 GLM에서는 반응변수의 분포가 **Exponential Family(지수족)** 에 속한다고 가정한다.
 
-고전적인 GLM에서는 반응변수의 분포가 **Exponential Family(지수족)** 에 속한다고 가정한다.
-
-Bernoulli, Binomial, Poisson, Normal, Gamma 등은 겉보기에는 서로 전혀 다른 확률분포처럼 보이지만, 이들을 적절하게 정리하면 하나의 공통된 수학적 형태로 표현할 수 있다.
-
-이번 글에서는 이 공통된 구조가 무엇인지 살펴보고, Bernoulli 분포를 직접 Exponential Family의 형태로 변환해 보려고 한다.
+Bernoulli, Binomial, Poisson, Normal, Gamma 등은 겉보기에는 서로 전혀 다른 확률분포처럼 보이지만, 이들을 적절하게 정리하면 하나의 공통된 수학적 형태인 지수족으로 표현할 수 있다.
 
 ---
 
-# 1. Exponential Family란 무엇인가?
+## 1. Exponential Family란 무엇인가?
 
-GLM에서 사용하는 Exponential Family는 일반적으로 다음과 같은 형태로 표현할 수 있다.
+Exponential Family는 일반적으로 다음과 같은 형태로 표현할 수 있다.
 
 $$
 f(y;\theta,\phi)
@@ -55,27 +52,23 @@ c(y,\phi)
 \right]
 $$
 
-처음 보면 다소 복잡해 보인다.
-
-하지만 우선 모든 기호를 이해하려 하기보다 가운데에 있는
+처음 보면 다소 복잡해 보인다. 하지만 우선 모든 기호를 이해하려 하기보다 가운데에 있는
 
 $$
-y\theta-b(\theta)
+\frac{y\theta-b(\theta)}{a(\phi)}
 $$
 
-에 주목해 보자.
-
-여기서
+에 주목해 보자. 여기서
 
 - $y$ : 실제 관측값
 - $\theta$ : Natural Parameter(자연모수)
 - $\phi$ : Dispersion Parameter(산포모수)
 
-를 의미한다.
+라고 한다. Bernoulli, Poisson, Normal, Gamma와 같은 서로 다른 분포들을 하나의 공통된 형태로 정리할 수 있다. 서로 다른 확률분포임에도 불구하고. 
 
 즉, Exponential Family에 속하는 분포들은 서로 다른 확률분포임에도 불구하고 **관측값과 모수 사이의 관계를 공통된 형태로 정리할 수 있다.**
 
-이것이 Bernoulli, Poisson, Normal, Gamma와 같은 서로 다른 분포들을 하나의 Family로 묶을 수 있는 이유이다.
+이것이 로 묶을 수 있는 이유이다.
 
 ---
 

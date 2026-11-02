@@ -11,7 +11,7 @@ tags:
   - Generalized Linear Model
 math: true
 toc: true
-published: false
+published: true
 ---
 
 # Generalized Linear Model(GLM)의 Insight
