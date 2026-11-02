@@ -1,6 +1,7 @@
 ---
 title: "Degree of Freedom : 자유도에 대한 이해"
 date: 2026-11-02 09:00:00 +0900
+last_modified_at: 2026-11-02 10:30:00 +0900
 categories:
   - Statistics
   - Applied Statistics

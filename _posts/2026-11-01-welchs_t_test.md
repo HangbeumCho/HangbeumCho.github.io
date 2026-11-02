@@ -1,6 +1,7 @@
 ---
 title: "Welch's t-test: 등분산 가정이 깨졌을 때의 평균 비교"
 date: 2026-11-01 09:00:00 +0900
+last_modified_at: 2026-11-02 10:30:00 +0900
 categories:
   - Statistics
   - Applied Statistics
