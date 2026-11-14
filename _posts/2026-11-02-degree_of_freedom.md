@@ -14,7 +14,7 @@ published: true
 
 
 
-# 자유도에 대한 또 다른 관점: RSS가 퍼질 수 있는 공간이 줄어든다
+# Degree of Freedom : 자유도에 대한 이해
 
 자유도를 처음 배우면 흔히
 

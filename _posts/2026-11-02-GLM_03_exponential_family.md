@@ -1,7 +1,7 @@
 ---
 title: "[GLM] #03. GLM의 확률분포는 왜 Exponential Family일까?"
 date: 2026-11-02 10:44:00 +0900
-last_modified_at: 2026-11-02 99:99:00 +0900
+last_modified_at: 2026-11-03 99:99:00 +0900
 categories:
   - Statistics
   - Applied Statistics
@@ -9,7 +9,7 @@ categories:
 tags:
   - GLM
   - Generalized Linear Model
-  - Expoenetial Family
+  - Exponential Family
 math: true
 toc: true
 published: false

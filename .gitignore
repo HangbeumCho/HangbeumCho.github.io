@@ -30,3 +30,8 @@ assets/js/dist
 *~
 .DS_Store
 Thumbs.db
+
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/

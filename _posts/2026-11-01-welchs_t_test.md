@@ -18,7 +18,7 @@ published: true
 
 # Welch's t-test: 등분산 가정이 깨졌을 때의 평균 비교
 
-## 1. 들어가며
+## 들어가며
 
 두 집단의 평균을 비교할 때 가장 많이 사용하는 검정은 독립 이표본 t-test(Two Sample t-test)이다.
 
@@ -50,7 +50,7 @@ $$
 
 ---
 
-## 2. Student's t-test 복습
+## Student's t-test 복습
 
 두 집단에서
 
@@ -102,7 +102,7 @@ $$
 
 ---
 
-## 3. 문제점: 분산이 다르면?
+## 문제점: 분산이 다르면?
 
 현실에서는
 
@@ -135,7 +135,7 @@ $$
 
 ---
 
-## 4. Welch's t-test
+## Welch's t-test
 
 어쩔 수 없이, 분모를 솔직하게 계산하자.
 
@@ -171,7 +171,7 @@ $$
 
 ---
 
-## 5. 새로운 문제: 더 이상 t 분포가 아니다
+## 새로운 문제: 더 이상 t 분포가 아니다
 
 Student's t-test가 정확한 t 분포를 따르는 이유는
 
@@ -193,7 +193,7 @@ $$
 
 ---
 
-## 6. Welch-Satterthwaite Approximation
+## Welch-Satterthwaite Approximation
 
 Welch의 핵심 아이디어는 다음과 같다.
 
@@ -225,7 +225,7 @@ $$
 
 ---
 
-## 7. Moment Matching
+## Moment Matching
 
 Welch-Satterthwaite 근사는 사실상 **Moment Matching**이다.
 
@@ -513,7 +513,7 @@ $$
 
 ---
 
-## 8. 왜 자유도가 소수가 되는가?
+## 왜 자유도가 소수가 되는가?
 
 Welch 검정을 해보면
 
@@ -546,7 +546,7 @@ df = 15.7
 
 ---
 
-## 9. 직관적으로 이해하기
+## 직관적으로 이해하기
 
 분산이 큰 집단은 평균을 불안정하게 추정한다.
 
@@ -570,7 +570,7 @@ Welch 자유도는
 
 ---
 
-## 10. 정리
+## 결론
 
 Welch's t-test는
 
