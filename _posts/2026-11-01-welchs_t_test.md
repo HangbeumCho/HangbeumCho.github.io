@@ -15,11 +15,6 @@ published: true
 ---
 
 
-
-# Welch's t-test: 등분산 가정이 깨졌을 때의 평균 비교
-
-## 들어가며
-
 두 집단의 평균을 비교할 때 가장 많이 사용하는 검정은 독립 이표본 t-test(Two Sample t-test)이다.
 
 예를 들어,

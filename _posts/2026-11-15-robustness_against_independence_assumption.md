@@ -16,9 +16,6 @@ toc: true
 published: true
 ---
 
-
-# Robustness against independence assumption : 독립성은 왜 표준오차를 결정하는가?
-
 통계학을 배우다 보면 정규성(Normality)이 성립하는지에 대해서 많은 관심을 갖게 되는데, 한가지 놓치고 넘어가는 가정이 있다. 바로 **독립성(Independence)** 이다. 사실 많은 통계적 추론은 정규성이 조금 깨져도 상당히 강건(Robust)하지만, 독립성이 깨지면 표준오차(Standard Error) 자체가 잘못 계산되면서 검정 결과가 크게 왜곡될 수 있다.
 
 ---

@@ -14,8 +14,6 @@ published: true
 
 
 
-# Degree of Freedom : 자유도에 대한 이해
-
 자유도를 처음 배우면 흔히
 
 > "독립적으로 움직일 수 있는 정보의 개수"

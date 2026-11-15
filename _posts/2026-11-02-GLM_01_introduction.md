@@ -14,8 +14,6 @@ toc: true
 published: true
 ---
 
-# Generalized Linear Model(GLM)의 Insight
-
 선형회귀(Linear Regression)는 통계학에서 가장 널리 사용되는 회귀모형이다. 일반적인(General?) 선형회귀에서는 반응변수(Response Variable)의 조건부 분포를 다음과 같이 표현한다.
 
 $$
