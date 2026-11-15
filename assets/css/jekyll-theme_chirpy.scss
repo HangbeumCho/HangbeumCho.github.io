@@ -115,3 +115,16 @@ html[data-mode="dark"] {
 .content a:hover {
   color: var(--chb-current-link-hover);
 }
+
+/* Keep the post footer focused on copying the link. */
+.post-tail-bottom .license-wrapper {
+  display: none;
+}
+
+.post-tail-bottom .share-wrapper {
+  margin-inline-start: auto;
+}
+
+.post-tail-bottom .share-label {
+  display: none;
+}

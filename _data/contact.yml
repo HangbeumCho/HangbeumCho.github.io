@@ -1,5 +1,13 @@
 #  The contact options.
 
+- type: Notice
+  icon: "fa-solid fa-scale-balanced"
+  url: "https://github.com/HangbeumCho/HangbeumCho.github.io/blob/main/NOTICE.md"
+
+- type: License
+  icon: "fa-solid fa-file-contract"
+  url: "https://github.com/HangbeumCho/HangbeumCho.github.io/blob/main/LICENSE"
+
 - type: github
   icon: "fab fa-github"
 

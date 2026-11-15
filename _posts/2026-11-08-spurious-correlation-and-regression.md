@@ -48,8 +48,8 @@ $X\sim N(0,1)$이고 $Y=X^2$라고 하자.
 $$
 \begin{aligned}
 \operatorname{Cov}(X,Y)
-&=\operatorname{Cov}(X,X^2)\
-&=E[X^3]-E[X]E[X^2]\
+&=\operatorname{Cov}(X,X^2)\\
+&=E[X^3]-E[X]E[X^2]\\
 &=0.
 \end{aligned}
 $$
@@ -60,7 +60,7 @@ $$
 
 ---
 
-# 2. 공분산과 표본상관계수
+## 공분산과 표본상관계수
 
 앞서 언급한 **correlated**의 개념은 모집단의 특성을 나타낸다. 그러나 실제 분석에서는 두 확률변수의 결합분포를 알 수 없는 경우가 많으므로, 관측된 표본을 이용하여 추정한다. 표본상관계수는 다음과 같다.
 
@@ -191,7 +191,7 @@ $$
 두 확률과정은 서로 독립이므로 모든 시점 $t,s$에 대해 다음이 성립한다.
 
 $$
-\boxed{\operatorname{Cov}(X_t,Y_s)=0}
+\operatorname{Cov}(X_t,Y_s)=0
 $$
 
 그런데 실제로 두 Random Walk를 생성하여 표본상관계수를 계산하면, 서로 독립인데도 상당히 큰 절댓값의 상관계수가 관측될 수 있다.
@@ -217,6 +217,8 @@ $$
 <details markdown="1">
 
 <summary> 분포수렴 내용 </summary>
+
+
 
 관측기간이 $T$일 때 두 Random Walk의 표본상관계수를 다음과 같이 정의하자.
 
@@ -280,7 +282,7 @@ $$
 따라서
 
 $$
-\boxed{r_T\not\xrightarrow{p}0}
+r_T\not\xrightarrow{p}0
 $$
 
 이다.

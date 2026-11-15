@@ -62,9 +62,6 @@ analytics:
   fathom:
     id:
 
-pageviews:
-  provider:
-
 theme_mode:
 
 cdn:
@@ -93,7 +90,7 @@ comments:
     strict: 0
     input_position: bottom
     lang: ko
-    reactions_enabled: 1
+    reactions_enabled: 0
 
 assets:
   self_host:
